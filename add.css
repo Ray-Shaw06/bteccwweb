@@ -1,0 +1,146 @@
+body {
+    background: radial-gradient(circle, white, #004aad);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar a {
+    color: #051324;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#ptlogo {
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+    33% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    66% {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.star1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text1 {
+    background-color: #051324;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    padding: 10px;
+}
+
+.img1 {
+    display: flex;
+    justify-content: center;
+}
+
+.ptfooter {
+    color: #051324;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 20px 0;
+    color: #051324;
+}
+
+label {
+    font-weight: 600;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+label, input {
+    height: 30px;
+}
+
+.formcss {
+    display: flex;
+    justify-content: center;
+}
+
+.pagesub {
+    text-align: center;
+    padding: 2% 0;
+    font-size: 2rem;
+    color: #051324;
+}
+
+input[type=submit] {
+    border-radius: 20px;
+    color: white;
+    background-color: #051324;
+    font-size: small;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* Other responsive CSS rules go here */
